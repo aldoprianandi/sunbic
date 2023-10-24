@@ -1,0 +1,31 @@
+@import 'colors';
+@import 'navbar';
+@import 'jumbotron';
+@import 'button';
+@import 'benefit';
+@import 'professors';
+@import 'program';
+@import 'events';
+@import 'news';
+@import 'footer';
+@import 'admission';
+@import 'login';
+@import 'register';
+
+@import 'responsive';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lora', serif;
+}
+
+@font-face {
+    font-family: GT Walsheim Pro;
+    src: url(../font/GTWalsheimPro-Regular.ttf);
+}

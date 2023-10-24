@@ -1,0 +1,286 @@
+// Mobile
+
+@media screen and (max-width:768px) {
+    .navbar {
+        display: flex;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    .navbar-brand {
+        img {
+            width: 100px;
+        }
+    }
+
+    .navbar .menu-btn {
+        display: block;
+
+        img {
+            padding: 1rem;
+            border-radius: .5rem;
+            background-color: #EDEDED;
+        }
+    }
+
+    #click:checked~.menu-btn i:before {
+        content: "\f00d";
+    }
+
+    .navbar ul {
+        position: fixed;
+        top: 95px;
+        left: -100%;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    #click:checked~ul {
+        left: 0;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        margin: 40px 0;
+        line-height: 40px;
+    }
+
+    .navbar ul li a {
+        width: 100%;
+        margin-left: -100%;
+        display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        color: #fff;
+    }
+
+    .navbar ul li a.btn-primary {
+        display: inline-block !important;
+        width: auto;
+    }
+
+    #click:checked~ul li a {
+        margin-left: 0px;
+    }
+
+    .navbar ul li a:hover {
+        background: none;
+        color: $primary;
+    }
+
+    .jumbotron {
+        margin-top: 8rem;
+        flex-direction: column;
+
+        &-left {
+            text-align: center;
+        }
+    }
+
+    .benefit {
+        &-content {
+            justify-content: space-evenly;
+
+            &-box {
+                margin: 1rem 0;
+                width: 44%;
+            }
+        }
+    }
+
+    .professors {
+        &-content {
+            flex-direction: column;
+
+            &-box {
+                width: 100%;
+            }
+        }
+    }
+
+    .program {
+        &-content {
+            flex-direction: column;
+        }
+    }
+
+    .events {
+        &-content {
+            &-box {
+                flex-direction: column;
+
+                &-left {
+                    text-align: center;
+                    margin-bottom: 2rem;
+                }
+
+                &-mid {
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    img {
+                        width: 100%;
+                        border-radius: .5rem;
+                        margin: 1rem 0;
+                    }
+
+                    h4 {
+                        margin: 0;
+                        max-width: 100%;
+                    }
+                }
+
+                &-right {
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    &-top {
+                        display: flex;
+                        flex-direction: column;
+                        margin-bottom: 1rem;
+                        margin-top: 2rem;
+                    }
+                }
+            }
+
+        }
+
+        &-footer {
+            justify-content: center;
+        }
+    }
+
+    .news {
+        &-content {
+            flex-direction: column;
+
+            &-box {
+                text-align: center;
+
+                &-footer {
+                    justify-content: center;
+                }
+            }
+
+
+        }
+
+
+    }
+
+    .footer {
+
+        &-top {
+            text-align: center;
+            justify-content: center;
+            gap: 3rem;
+
+            ul {
+                width: 100%;
+            }
+        }
+
+        &-bottom {
+            &-top {
+                flex-direction: column;
+
+                ul {
+                    li {
+                        text-align: center;
+                        display: block;
+                        margin: 2rem 0;
+                    }
+                }
+            }
+
+            &-bottom {
+                flex-direction: column;
+
+                &-left {
+                    p {
+                        text-align: center;
+                    }
+
+                    ul {
+                        display: flex;
+                        justify-content: center;
+                    }
+                }
+
+                &-right {
+                    ul {
+                        margin-top: 5rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+
+                        li {
+                            text-align: center;
+                            display: block;
+                            margin: 1rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .admission {
+        margin: 10rem auto;
+
+        &-header {
+            text-align: center;
+        }
+
+        &-form {
+
+            h2,
+            p {
+                text-align: center;
+            }
+
+            p {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+// Mobile L 
+@media screen and (max-width:425px) {
+    .benefit {
+        &-content {
+            flex-direction: column;
+
+            &-box {
+                width: 100%;
+            }
+        }
+    }
+
+    .admission {
+        &-form {
+            padding: 2rem;
+        }
+    }
+
+    .login,
+    .register {
+        &-form {
+            padding: 1.5rem;
+
+            input {
+                font-size: 14px;
+            }
+        }
+    }
+}

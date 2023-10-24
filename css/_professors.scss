@@ -1,0 +1,57 @@
+.professors {
+    width: 90%;
+    margin: auto;
+    padding: 5rem 0;
+
+    &-header {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        h2 {
+            &::after {
+                margin: auto;
+                margin-top: 1rem;
+                content: '';
+                display: block;
+                width: 12%;
+                height: 2px;
+                background-color: $primary;
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+
+        &-box {
+            flex: 1;
+            padding: 1.5rem;
+            border-radius: .5rem;
+            background-color: #EDEDED;
+
+            img {
+                width: 100%;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            p {
+                margin-top: 20px;
+                font-size: 14px;
+                line-height: 28px;
+                font-family: 'Inter', sans-serif;
+            }
+
+            .title {
+                font-family: 'GT Walsheim Pro', sans-serif;
+                color: $primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,138 @@
+.footer {
+    margin-top: 5rem;
+
+    hr {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    &-top {
+        margin: auto;
+        margin-bottom: 5rem;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10rem;
+        flex-wrap: wrap;
+
+        h5 {
+            font-size: 14px;
+            font-family: 'Inter', sans-serif;
+            color: rgba($color: #000000, $alpha: 0.7);
+            margin-bottom: 2rem;
+        }
+
+        ul {
+
+            li {
+                list-style: none;
+                line-height: 32px;
+
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+                    color: #000;
+                    font-family: 'Inter', sans-serif;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+
+    &-bottom {
+        background-color: $primary;
+        padding: 3rem 0;
+
+        &-top {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+            ul {
+
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0 2rem;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+
+                    a {
+                        font-family: 'Inter', sans-serif;
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        &-bottom {
+            width: 90%;
+            margin: auto;
+            margin-top: 4rem;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+
+            &-left {
+                p {
+                    color: #fff;
+                    font-size: 14px;
+                    font-family: 'Inter', sans-serif;
+                }
+
+                ul {
+                    margin-top: 1rem;
+
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        margin-right: 20px;
+
+                        a {
+                            &:hover {
+                                transform: scale(1.2);
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-right {
+                ul {
+                    li {
+                        list-style: none;
+                        display: inline-block;
+                        margin: 0 1rem;
+
+                        &:last-child {
+                            margin-right: 0;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: #fff;
+                            font-size: 14px;
+                            font-family: 'Inter', sans-serif;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

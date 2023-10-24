@@ -1,0 +1,50 @@
+.benefit {
+    width: 90%;
+    margin: auto;
+    padding: 5rem 0;
+
+    &-header {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        h2 {
+            &::after {
+                margin: auto;
+                margin-top: 1rem;
+                content: '';
+                display: block;
+                width: 12%;
+                height: 2px;
+                background-color: $primary;
+            }
+        }
+
+    }
+
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-box {
+            flex-wrap: wrap;
+            padding: 4rem 2rem;
+            text-align: center;
+            width: 23%;
+            background-color: #EDEDED;
+            border-radius: .5rem;
+
+            h4 {
+                margin: 1rem 0;
+                font-size: 23px;
+            }
+
+            p {
+                font-family: 'Inter', sans-serif;
+                color: #222831;
+                line-height: 24px;
+            }
+        }
+    }
+}

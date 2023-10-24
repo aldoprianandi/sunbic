@@ -1,0 +1,73 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    border-radius: .5rem;
+
+    &-brand {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &-form {
+        border-radius: .5rem;
+        margin: 2rem;
+        padding: 3rem;
+        background-color: #fff;
+
+        h4 {
+            font-size: 24px;
+            font-family: 'GT Walsheim Pro';
+        }
+
+        p {
+            margin-top: .5rem;
+            font-family: 'Inter', sans-serif;
+            color: #939393;
+            margin-bottom: 2rem;
+        }
+
+        h4,
+        p {
+            text-align: center;
+        }
+
+        button {
+            margin-top: 1rem;
+            width: 100%;
+        }
+
+        input {
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+            padding: .7rem 1.4rem;
+            outline: none;
+            border: 2px solid #F1F1F1;
+            border-radius: .25rem;
+            display: block;
+            margin: 1rem 0;
+            width: 100%;
+
+            &::placeholder {
+                color: #7C7C7C;
+            }
+
+            &:active,
+            &:focus {
+                border: 2px solid $primary;
+            }
+        }
+    }
+
+    &-footer {
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        color: #fff;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+}

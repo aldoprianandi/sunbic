@@ -1,0 +1,85 @@
+.news {
+    width: 90%;
+    margin: auto;
+    padding: 5rem 0;
+
+    &-date {
+        font-family: 'GT Walsheim Pro', sans-serif !important;
+        color: $primary;
+        font-size: 18px !important;
+        margin-bottom: 1rem;
+    }
+
+    &-header {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        h2 {
+            &::after {
+                margin: auto;
+                margin-top: 1rem;
+                content: '';
+                display: block;
+                width: 12%;
+                height: 2px;
+                background-color: $primary;
+            }
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+
+        &-box {
+            flex: 1;
+            border-radius: .5rem;
+            background-color: #EDEDED;
+
+            &-thumbnail {
+                overflow: hidden;
+                border-radius: .5rem;
+
+                a {
+                    &:hover img {
+                        transform: scale(1.2);
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    transition: all 0.3s ease;
+                }
+            }
+
+            &-details {
+                padding: 1rem 2rem;
+                min-height: 350px;
+
+                h5 {
+                    font-size: 20px;
+                    text-transform: capitalize;
+                }
+
+
+                p {
+                    margin-top: 20px;
+                    font-size: 14px;
+                    line-height: 28px;
+                    font-family: 'Inter', sans-serif;
+                }
+            }
+
+            &-footer {
+                padding: 0 2rem;
+                padding-bottom: 1rem;
+                margin: 1rem 0;
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission - Sunbic University</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Lora:wght@600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo-sunbic.png" alt=""></a>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <img src="img/menu-mobile.svg" alt="">
+        </label>
+        <ul>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a class="btn-primary" href="login.html">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="admission">
+        <div class="admission-breadcrumb">
+            <a href="/">Main Page</a> / <a href="#">Admission</a>
+        </div>
+        <div class="admission-header">
+            <h2>Admission</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos fugit, iste, voluptatum delectus porro
+                consequuntur itaque eligendi, corrupti cum eius inventore et. Asperiores beatae explicabo dignissimos
+                laborum ex neque amet, maxime modi aspernatur molestias enim molestiae vitae consectetur dicta cum
+                facere debitis animi, unde provident saepe eos earum. Delectus, repellendus!</p>
+        </div>
+        <div class="admission-form">
+            <h2>Sunbic Admission Form</h2>
+            <p>Please fill in the college application form below if you want to attend our
+                institution.
+            </p>
+            <hr>
+            <form action="">
+                <label for="name">Name</label>
+
+                <div class="input-group">
+                    <input type="text" placeholder="First Name" name="name" id="first-name">
+                    <input type="text" placeholder="Last Name" name="name" id="last-name">
+                </div>
+                <label for="date">Date of Birth</label>
+
+                <input type="date" name="date" id="date">
+
+                <label for="email">Email Address</label>
+
+                <input type="email" placeholder="Enter your email address" name="email" id="email">
+
+                <label for="country">Country of Citizenship</label>
+
+                <div class="select-group">
+                    <select name="country" id="country">
+                        <option value="" disabled selected>Enter your country</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Singapore">Singapore</option>
+                    </select>
+                </div>
+
+                <label for="address">Home Address</label>
+                <input type="text" placeholder="Street Address" name="address" id="address">
+                <div class="input-group">
+                    <input type="text" placeholder="City" name="city" id="city">
+                    <select name="state" id="state">
+                        <option value="state" disabled selected>State</option>
+                        <option value="State1">State1</option>
+                        <option value="State2">State2</option>
+                        <option value="State3">State3</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <input type="text" placeholder="Zipcode" name="zipcode" id="zipcode">
+                    <select name="country" id="country">
+                        <option value="" disabled selected>Country</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Singapore">Singapore</option>
+                    </select>
+                </div>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="" disabled selected>Enter your gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Not Defined">Not Defined</option>
+                </select>
+
+                <label for="identity">Identity Number</label>
+                <input type="text" name="identity" id="identity" placeholder="Enter your ID Number">
+
+                <label for="religion">Religion</label>
+                <input type="text" name="religion" id="religion" placeholder="Enter your Religion">
+
+                <div class="form-footer">
+                    <button class="btn-secondary">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <hr>
+        <div class="footer-top">
+            <ul>
+                <h5>Schools</h5>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Engineering</a></li>
+                <li><a href="#">Computer Science</a></li>
+                <li><a href="#">Law</a></li>
+                <li><a href="#">Medicine</a></li>
+                <li><a href="#">Humanities & Sciences</a></li>
+            </ul>
+            <ul>
+                <h5>Resources</h5>
+                <li><a href="#">A -to Z Index</a></li>
+                <li><a href="#">Community Engagement</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Sunbic Profiles</a></li>
+            </ul>
+            <ul>
+                <h5>Admission</h5>
+                <li><a href="#">Undergraduate</a></li>
+                <li><a href="#">Graduate</a></li>
+                <li><a href="#">Financial Aid</a></li>
+            </ul>
+            <ul>
+                <h5>About Sunbic</h5>
+                <li><a href="#">Why Online?</a></li>
+                <li><a href="#">Facts</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Accreditation</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-top">
+                <img src="img/logo-sunbic-footer.png" alt="">
+                <ul>
+                    <li><a href="#">Sunbic Home</a></li>
+                    <li><a href="#">Search Sunbic</a></li>
+                    <li><a href="#">Emergency Info</a></li>
+                    <li><a href="#">Social Media Links</a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom-bottom">
+                <div class="footer-bottom-bottom-left">
+                    <p>©Copyright Sunbic University. Sunbic, Indonesia 32432.</p>
+                    <ul>
+                        <li><a href="#"><img src="img/facebook.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/linkedin.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
+                        <li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-bottom-right">
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Copyright</a></li>
+                        <li><a href="#">Term of Use</a></li>
+                        <li><a href="#">Trademarks</a></li>
+                        <li><a href="#">Non-Discrimination</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
